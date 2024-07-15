@@ -12,7 +12,7 @@ const Login = ({ setEmail }) => {
 
   function handleSubmitLogin(e){
     e.preventDefault();
-    fetch('http://127.0.0.1:5000/login', {
+    fetch('http://127.0.0.1:5555/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email, password: password })
@@ -38,7 +38,7 @@ const Login = ({ setEmail }) => {
     function handleSubmitSignup(e) {
       e.preventDefault();
     
-      fetch('http://127.0.0.1:5000/signup', {
+      fetch('http://127.0.0.1:5555/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: userName, email: email, password: password })

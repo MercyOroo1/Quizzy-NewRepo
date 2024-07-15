@@ -12,7 +12,7 @@ const ResponseForm = ({ question_id, quiz_id, user_id }) => {
     event.preventDefault();
     console.log('Response submitted:', response);
 
-    fetch('http://localhost:5000/participant/responses', {
+    fetch('http://localhost:5555/participant/responses', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

@@ -13,7 +13,7 @@ function QuizForm({ onAddQuiz, onRefresh }) {
     e.preventDefault();
     setLoadingQuiz(true);
     setError('');
-    fetch("http://127.0.0.1:5000/creator/quizzes", {
+    fetch("http://127.0.0.1:5555/creator/quizzes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

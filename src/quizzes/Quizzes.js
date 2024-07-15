@@ -25,7 +25,7 @@ function Quizzes({ quizzes }) {
   };
 
   const handleLogout = () => {
-    fetch('http://127.0.0.1:5000/logout', {
+    fetch('http://127.0.0.1:5555/logout', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

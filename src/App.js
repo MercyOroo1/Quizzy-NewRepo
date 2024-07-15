@@ -27,7 +27,7 @@ function App() {
       });
   }, []);
 
-  const { data, errors } = useFetch("http://127.0.0.1:5000/participant/quizzes", null, refresh)
+  const { data, errors } = useFetch("http://127.0.0.1:5555/participant/quizzes", null, refresh)
 
   console.log(data, errors)
 

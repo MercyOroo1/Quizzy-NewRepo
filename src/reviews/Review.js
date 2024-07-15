@@ -6,7 +6,7 @@ function Review({ reviews }) {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:5000/creator/quizzes/${reviews.quiz_id}/reviews`, {
+        const response = await fetch(`http://127.0.0.1:5555/creator/quizzes/${reviews.quiz_id}/reviews`, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

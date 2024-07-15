@@ -15,7 +15,7 @@ function Questions({ userId }) {
 
   useEffect(() => {
     if (quizId) {
-      fetch(`http://127.0.0.1:5000/participant/quizzes/${quizId}/questions`, {
+      fetch(`http://127.0.0.1:5555/participant/quizzes/${quizId}/questions`, {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function Questions({ userId }) {
 
   const handleSubmitReview = (e) => {
     e.preventDefault();
-    fetch("http://127.0.0.1:5000/participant/reviews", {
+    fetch("http://127.0.0.1:5555/participant/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

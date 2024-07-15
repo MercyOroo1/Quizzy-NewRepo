@@ -17,7 +17,7 @@ function SingleQuiz({ quiz, onUpdateQuiz, onDeleteQuiz }) {
   };
 
   const handleUpdateQuiz = () => {
-    fetch(`http://127.0.0.1:5000/creator/quizzes/${quiz.id}`, {
+    fetch(`http://127.0.0.1:5555/creator/quizzes/${quiz.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function SingleQuiz({ quiz, onUpdateQuiz, onDeleteQuiz }) {
 
   const handleDeleteQuiz = () => {
     if (window.confirm(`Are you sure you want to delete quiz "${quiz.title}"?`)) {
-      fetch(`http://127.0.0.1:5000/creator/quizzes/${quiz.id}`, {
+      fetch(`http://127.0.0.1:5555/creator/quizzes/${quiz.id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': 'Bearer ' + localStorage.getItem('token')
