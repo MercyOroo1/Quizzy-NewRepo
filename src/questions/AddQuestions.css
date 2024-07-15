@@ -1,0 +1,63 @@
+/* AddQuestions.css */
+
+.new-question-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .new-question-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .new-question-form p.error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .new-question-form form {
+    margin-bottom: 20px;
+  }
+  
+  .new-question-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .new-question-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .new-question-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .new-question-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .new-question-form a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .new-question-form a:hover {
+    text-decoration: underline;
+  }
+  

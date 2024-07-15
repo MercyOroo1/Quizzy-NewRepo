@@ -1,0 +1,96 @@
+/* Quizzes.css */
+
+/* Top Buttons Container */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Button Styles */
+.top-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.top-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Quiz List Container */
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual Quiz Item */
+.quiz-item {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.quiz-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quiz-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Actions (Buttons within Quiz Item) */
+.quiz-item .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz-item .actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.quiz-item .actions .update-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.take-quiz-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.quiz-item .actions .take-quiz-button:hover {
+  background-color: #218838;
+}
