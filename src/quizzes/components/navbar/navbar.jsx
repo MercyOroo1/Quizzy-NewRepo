@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../../../assets/QUIZZY.png"
 import './navbar.css'
-import { logRoles } from "@testing-library/react";
 
 const Navbar = () =>{
     const navigate = useNavigate();
@@ -37,7 +35,8 @@ const Navbar = () =>{
       });
   };
 
-  return(
+  return( 
+    <div className="container">
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       <h1>Quizzy</h1>
       <ul>
@@ -48,6 +47,7 @@ const Navbar = () =>{
         <li>Contact Us</li>
       </ul>
     </nav>
+    </div>
   )
 }
 

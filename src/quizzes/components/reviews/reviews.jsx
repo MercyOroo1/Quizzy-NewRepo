@@ -55,7 +55,7 @@ const Reviews = () => {
                     <ul ref={slider}>
                     {reviews.map((review) => {
                         return (
-                                <li>
+                                <li key={review.id}>
                                     <div key={review.id} className='slide'>
                                         <div className='user-info'>
                                             <img src={userProf} alt="pfp" />

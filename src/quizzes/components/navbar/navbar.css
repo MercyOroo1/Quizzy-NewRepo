@@ -1,12 +1,13 @@
 nav{
-    width: 100% !important;
+    width: 1460px !important;
     /* background: #333; */
     color: white;
-    padding: 4px 20px;
+    padding: 4px 0;
+    padding-left:8000 !important;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 80;
+    left: 100;
+    right: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
