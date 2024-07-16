@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Response from './Response';
-// import './ResponseForm.css';
+import './ResponseForm.css';
 
 const ResponseForm = ({ question_id, quiz_id, user_id }) => {
   const [response, setResponse] = useState('');
