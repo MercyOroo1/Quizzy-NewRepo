@@ -62,7 +62,7 @@ const Login = ({ setEmail }) => {
 
 
   return (
-    <div className={`container ${isActive ? 'active' : ''}`} id="container">
+    <div className={`login-container ${isActive ? 'active' : ''}`} id="container">
       <div className="form-container sign-up">
         <form onSubmit={handleSubmitSignup}>
           <h1>Create Account</h1>

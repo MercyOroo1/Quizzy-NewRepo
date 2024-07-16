@@ -3,6 +3,9 @@ import SingleQuiz from './SingleQuiz';
 import './Quizzes.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Main from './components/main/main';
+import Navbar from './components/navbar/navbar';
+import Reviews from './components/reviews/reviews';
 
 function Quizzes({ quizzes }) {
   const [updatedQuizzes, setUpdatedQuizzes] = useState([]);
@@ -24,39 +27,13 @@ function Quizzes({ quizzes }) {
     setUpdatedQuizzes(updatedQuizzes => updatedQuizzes.filter(quiz => quiz.id!== quizId));
   };
 
-  const handleLogout = () => {
-    fetch('http://127.0.0.1:5555/logout', {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`,
-      },
-    })
-     .then(response => {
-        if (response.ok) {
-          localStorage.removeItem('token');
-          navigate('/', { replace: true });
-        } else {
-          throw new Error('Failed to log out');
-        }
-      })
-     .catch(error => {
-        console.error(`Error logging out: ${error}`);
-        alert('Error logging out. Please try again.');
-      });
-  };
 
   console.log(updatedQuizzes)
 
   return (
     <div>
-      <div className='top-buttons'>
-      <Link to='create/quizzes'>
-        <button>Create Quizzes</button>
-      </Link>
-      <button onClick={handleLogout}>Logout</button>
-
-      </div>
+      <Navbar/>
+      <Main/>
     <div className='quiz-list d-flex flex-wrap justify-content-center'>
       {updatedQuizzes.map(quiz => {
         if (quiz && quiz.id) { 
@@ -66,6 +43,7 @@ function Quizzes({ quizzes }) {
         }
       })}
     </div>
+    <Reviews/>
     </div>
   );
 }
