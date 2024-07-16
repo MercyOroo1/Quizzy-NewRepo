@@ -70,23 +70,28 @@ function Questions({ userId }) {
       <div className='review-form'>
         <p>How would you rate this quiz on a scale of one to ten 🤔</p>
         <form onSubmit={handleSubmitReview}>
+          <div>
+            <label>
+            <p>Rating:</p>
+              <input type="number" value={rating} onChange={(e) => setRating(e.target.value)} min="1" max="10" />
+            </label>
+          </div>
+          <div>
           <label>
-            Rating:
-            <input type="number" value={rating} onChange={(e) => setRating(e.target.value)} min="1" max="10" />
-          </label>
-          <label>
-            Review:
+            <p>Review:</p>
             <textarea value={reviewText} onChange={(e) => setReviewText(e.target.value)} />
           </label>
+          </div>
+          <Link to='/quizzes'>
+            <button className='back-btn'>Back</button>
+          </Link>
           <button type="submit">Submit Review</button>
         </form>
       </div>
       <div>
         <Review reviews={reviews} />
       </div>
-      <Link to='/quizzes'>
-        <button className='back-btn'>Back</button>
-      </Link>
+      
     </div>
   );
 }
