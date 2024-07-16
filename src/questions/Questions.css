@@ -7,8 +7,10 @@
 .back-btn {
     background-color: #24a0ed;
     border: none;
+    border-radius: 5px;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
+    margin-right: 190px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
