@@ -9,8 +9,7 @@
   }
   
   .question-text {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 25px;
     margin-bottom: 10px;
   }
   
@@ -26,3 +25,13 @@
     margin-top: 10px;
   }
   
+  .choices p{
+    display:flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
