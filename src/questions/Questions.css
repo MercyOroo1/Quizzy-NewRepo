@@ -20,7 +20,9 @@
 /* Questions.css */
 
 .review-form {
+    width: 40%;
     margin-top: 40px;
+    margin-left: 30%;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
