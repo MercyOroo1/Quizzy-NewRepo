@@ -1,6 +1,6 @@
 .main-container{
     width: 100%;
-    min-height: 100vh;
+    min-height: 300px;
     background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8, 0, 58, 0.7) ),url('../../../assets/ProjVid.mp4');
     background-size: cover;
     background-position: center;
