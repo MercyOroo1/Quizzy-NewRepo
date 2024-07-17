@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about-page">
       <Navbar />
-      <div className="main-container">
+      <div className="mainn-container">
         <h2>About Us</h2>
         <div className="about-content">
           <p>Welcome to our interactive quiz platform, where learning meets fun! We are dedicated to providing a rich learning experience through engaging quizzes on various topics. You'll find something for you here!</p>

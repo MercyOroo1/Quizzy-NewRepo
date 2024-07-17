@@ -42,10 +42,9 @@ const Navbar = () =>{
       <ul>
         {/* <li>Home</li> */}
         <li><Link to="/quizzes">Home</Link></li>
-        <li onClick={handleLogout}>Logout</li>
-        <li><Link to="create/quizzes">Create Quizzes</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li>Contact Us</li>
+        <li><Link to="create/quizzes">Create Quizzes</Link></li>
+        <li onClick={handleLogout}>Logout</li>
       </ul>
     </nav>
     </div>
