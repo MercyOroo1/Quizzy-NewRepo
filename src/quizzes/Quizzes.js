@@ -3,8 +3,8 @@ import SingleQuiz from './SingleQuiz';
 import './Quizzes.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Main from './components/main/main';
-import Navbar from './components/navbar/navbar';
+import Main from './components/main/Main';
+import Navbar from './components/navbar/Navbar';
 import Reviews from './components/reviews/reviews';
 
 function Quizzes({ quizzes }) {
