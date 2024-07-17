@@ -9,7 +9,9 @@ import Questions from './questions/Questions';
 import QuizPage from './quizzes/QuizPage';
 import AddQuestions from './questions/AddQuestions';
 import About from './quizzes/components/about/About';
-import Navbar from './quizzes/components/navbar/Navbar'; // Assuming Navbar is used globally
+import Navbar from './quizzes/components/navbar/Navbar';
+import Home from './quizzes/Quizzes';
+
 
 function App() {
   const [userId, setUserId] = useState(null);
@@ -37,6 +39,7 @@ function App() {
         <Navbar /> {/* Navbar rendered globally */}
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/quizzes" element={<Home quizzes={data} userId={userId} />} />
           <Route path="/quizzes" element={<Quizzes quizzes={data} userId={userId} />} />
           <Route path="/quizzes/questions/:quizId" element={<Questions quizzes={data} userId={userId} />} />
           <Route path="/quizzes/create/quizzes" element={<QuizPage quizzes={data} onRefresh={handleRefresh} />} />
