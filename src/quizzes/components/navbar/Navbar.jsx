@@ -40,10 +40,11 @@ const Navbar = () =>{
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       <h1>Quizzy</h1>
       <ul>
-        <li>Home</li>
+        {/* <li>Home</li> */}
+        <li><Link to="/quizzes">Home</Link></li>
         <li onClick={handleLogout}>Logout</li>
         <li><Link to="create/quizzes">Create Quizzes</Link></li>
-        <li>About</li>
+        <li><Link to="/about">About</Link></li>
         <li>Contact Us</li>
       </ul>
     </nav>
