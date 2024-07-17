@@ -1,20 +1,35 @@
 import React from 'react';
-import Navbar from '../navbar/Navbar'; 
-import Main from '../main/Main';
+import Navbar from '../navbar/Navbar';
+import './About.css'; // Importing CSS file for About component
 
 const About = () => {
   return (
-    <div>
-      <Navbar /> 
-      <Main />
-      <div className="about-container">
-        <h2>About Quizzy</h2>
-        <p>
-          Welcome to Quizzy, your ultimate destination for interactive quizzes. We're dedicated to making learning fun and accessible for everyone. Explore our diverse range of quizzes and challenge yourself today!
-        </p>
-        <p>
-          Quizzy is designed to provide an engaging learning experience across various subjects. Whether you're a student, educator, or just curious, there's something here for you. Join us in exploring the world of knowledge through quizzes!
-        </p>
+    <div className="about-page">
+      <Navbar />
+      <div className="main-container">
+        <h2>About Us</h2>
+        <div className="about-content">
+          <p>Welcome to our interactive quiz platform, where learning meets fun! We are dedicated to providing a rich learning experience through engaging quizzes on various topics. You'll find something for you here!</p>
+        </div>
+
+        <div className="mission-container">
+          <h3>Our Mission</h3>
+          <p>Our mission is to make learning enjoyable and accessible for everyone. We believe in the power of quizzes to reinforce learning and inspire curiosity. Through our platform, we aim to foster a community of learners who are eager to explore new subjects and deepen their understanding.</p>
+        </div>
+
+        <div className="offer-container">
+          <h3>What We Offer</h3>
+          <ul>
+            <li><strong>Diverse Quizzes:</strong> Explore a wide range of quizzes covering subjects from history and science to pop culture and current events.</li>
+            <li><strong>Interactive Experience:</strong> Engage with interactive features that enhance your learning experience.</li>
+            <li><strong>User-Friendly Interface:</strong> Enjoy a seamless navigation experience with our user-friendly interface designed for all levels of users.</li>
+          </ul>
+        </div>
+
+        <div className="join-container">
+          <h3>Join Us Today</h3>
+          <p>Join our growing community of learners and educators today! Dive into our quizzes, challenge yourself, and discover new knowledge. We're excited to have you with us on this learning journey!</p>
+        </div>
       </div>
     </div>
   );
