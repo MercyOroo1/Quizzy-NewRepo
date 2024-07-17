@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import QuizForm from './QuizForm';
 import UpdateQuiz from './UpdateQuiz';
 
-function Quiz({onRefresh}) {
+function QuizN({onRefresh}) {
   const [quizzes, setQuizzes] = useState([]);
   const [quiz, setQuiz] = useState({ title: '', description: '' });
 
@@ -35,4 +35,4 @@ function Quiz({onRefresh}) {
   );
 }
 
-export default Quiz;
+export default QuizN;

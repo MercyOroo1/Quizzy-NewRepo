@@ -19,7 +19,6 @@ a{
   cursor: pointer;
 }
 
-/* .container{
-  padding-left: 10%;
-  padding-right: 10%;
-} */
+.container{
+align-items: center;
+}

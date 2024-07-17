@@ -11,6 +11,7 @@ import QuizPage from './quizzes/QuizPage';
 import SingleQuestion from './questions/SingleQuestion';
 import SingleQuiz from './quizzes/SingleQuiz';
 import AddQuestions from './questions/AddQuestions';
+import Quiz from './pages/Quiz/quiz'
 
 function App() {
   const [userId, setUserId] = useState(null);
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/quizzes' element={<Quizzes quizzes={data} userId={userId} />} />
+          <Route path='/quizzes/:quizId' element={<Quiz quizzes={data}/>} />
           <Route path='quizzes/questions/:quizId' element={<Questions quizzes={data} userId={userId} />} />
           <Route path= 'quizzes/create/quizzes' element = {<QuizPage quizzes = {data} onRefresh={handleRefresh} />}/>
           <Route path="/add-questions/:quizId" element={<AddQuestions/>} />
